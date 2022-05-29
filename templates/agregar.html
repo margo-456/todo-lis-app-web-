@@ -1,0 +1,14 @@
+
+<!--Se definen los bloques y se hace la extension de la pagina hacia layout.html-->
+{% extends "layout.html" %}
+{% block body %}
+
+<h1>Agregar tareas</h1>
+<!--permite agreagar la tarea y enviar los datos-->
+<form action="{{ url_for('agregar') }}" method="post">
+<!--Se definen los campos para ingresar una nueva tarea-->
+	<input type="texto" name="tarea" placeholder="agrega nueva tarea">
+	<button>Agregar</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html{
+	box-sizing: border-box;
+	min-height: 100%;
+	margin: 0px 100px;
+}
+body{
+	font-family: "Titillium Web",Helvetica,sans-serif;
+	background-image: url("https://mpc.es/wp-content/uploads/2016/02/fondo-web-yaru-importaciones-cabecera.jpg");
+	
+}
+
+p{
+	line-height: 1.5;
+	text-align: justify;
+	line-height: 1.5em;
+}
+
+h1{
+	
+	font-size: 2rem;
+	font-weight: bold;
+	letter-spacing: .3em;
+	vertical-align:text-top;
+	color: rgb(36, 176, 94);
+}
+
+h2{
+	font-size: 2rem;
+}
+
+h3{
+	font-size: 1.8rem;
+	font-weight: 700;
+	font-style: oblique;
+	text-align: center;
+	color:#2C1CF9;
+}
+
+h4{
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	color:#FF8600;
+}
+
+
+
+.contenido{
+	margin: 3rem auto;
+}
+
+.inicio{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 4rem;
+}
+
+.iconos{
+	display: flex;
+	height: 150px;
+	width: 150px;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color:#FFFD15;
+	border-radius: 50%;
+}
+
+.iconos i{
+	font-size: 2rem;
+	color: #212121;
+}
+
+
+.listado{
+	align-items: center;
+	align-content: center;
+	margin-bottom: 4rem
+}
+
+
+.formulario{
+	background-color:#CCCDFF;
+	padding: 2rem;
+	border-radius: 10px;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.formulario legend{
+	text-align: center;
+	font-size: 1rem;
+	margin-bottom: 2rem;
+	display: block;
+	font-weight: 700;
+}
+
+.contenedorCampos{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.campo{
+	margin-bottom: 1rem;
+	width: 100%;
+	flex: 0 0 calc(50% - 0.5rem);
+}
+
+.campo label{
+	color:#2D2D2D;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	display: block;
+	flex: 0 0 90px;
+}
+
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="email"],
+.campo textarea{
+	width: 100%;
+	padding: 0.5rem;
+	border:none;
+	border-radius: 0.5rem;
+}
+
+.w100{
+	flex: 0 0 100%;
+}
+
+.campo textarea{
+	height: 4rem;
+}
+
+.enviar{
+	display: flex;
+	justify-content: flex-end;
+}
+.footer{
+	height: 50%;
+	background:#A3A3A3;
+	border-radius: 20px 20px;
+	text-align: center;	
+	padding: 0.1rem;
+}

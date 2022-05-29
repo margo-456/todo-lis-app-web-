@@ -1,0 +1,25 @@
+
+	<!--Se definen los bloques y se hace la extension de la pagina hacia layout.html-->
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h1>LISTA DE TAREAS PENDIENTES</h1>
+
+	<!--se crea la lista de tareas -->
+	
+<div class="form-group">
+	<ul>
+		{% for tarea in tareas %}
+	<!--Lista de tareas de forma desordenada-->
+	
+		<li>{{ tarea }}</li>
+		{% endfor %}
+	</ul>
+</div> 
+<!--
+ funcion que permite ir a la pagina de agregar tarea
+-->
+<a href="{{ url_for('agregar') }}">Agregar nueva tarea</a>
+
+{% endblock %}
